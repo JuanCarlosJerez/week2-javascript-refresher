@@ -5,7 +5,7 @@
 ## Setup:
 1. Change directory ```cd``` into your wyncode folder.
 2. Create a new directory and name it ```week2-refresher```
-3. Fork the following repository ```https://github.com/dankified/week2-javascript-refresher.git``` in order to fork visit the link and click on the fork button on the top right corner. This will create a copy of this repository on your github account. 
+3. Fork the following repository ```https://github.com/dankified/week2-javascript-refresher``` in order to fork visit the link and click on the fork button on the top right corner. This will create a copy of this repository on your github account. 
 4. Clone your own version of ```week2-javascript-refresher``` into the directory you created in step 2.
 5. Run the following command in your terminal ```npm install```. This command will install this project's dependencies. Dependencies are other programs on which your program relies in order to work. We will talk more about this next week. This operation might take a couple of minutes.
 6. Run ```npm run test``` in your console. This will initialize a test suite that will check if your code is working correctly. We will talk more about testing on another lecture.
