@@ -1,4 +1,7 @@
-let {square, replaceCharactersInString} = require('../index');
+let {square} = require('../square');
+let {replaceCharactersInString} = require('../replaceCharactersInString');
+let {bmiCalculator} = require('../bmiCalculator');
+
 
 //delete the x at the beginning of the describe block to be able to run tests.
 
@@ -23,3 +26,18 @@ xdescribe('replace all instances of a character in a string', () => {
   })
 })
 
+
+//Exercise 3 tests
+
+xdescribe('calculate bmi', () => {
+  it('should return an object with 3 properties', () => {
+    expect(Object.keys(bmiCalculator('Pedro', 'male')).length).toBe(3);
+  })
+  it('should assign correct default values if height and weight are ignored', () => {
+    expect(bmiCalculator('Pedro', 'male')).toBe(24.69);
+  });
+  it('should assign correct weightStatus based on gender', () => {
+    expect(bmiCalculator('jane', 'female', 170, 80).weigthStatus).toBe('overweight');
+    expect(bmiCalculator('pedro', 'male', 170, 80).weigthStatus).toBe('normal');
+  })
+})
