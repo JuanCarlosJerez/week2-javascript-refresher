@@ -5,7 +5,7 @@ let {bmiCalculator} = require('../bmiCalculator');
 
 //delete the x at the beginning of the describe block to be able to run tests.
 
-//Exercise 1 tests
+//square tests
 
 xdescribe('square of a number', () => {
   it('should return the square of a number', () => {
@@ -18,7 +18,7 @@ xdescribe('square of a number', () => {
 })
 
 
-//Exercise 2 tests
+//replaceCharactersInString tests
 
 xdescribe('replace all instances of a character in a string', () => {
   it('should return a string with all the specified characters replaced', () => {
@@ -27,7 +27,7 @@ xdescribe('replace all instances of a character in a string', () => {
 })
 
 
-//Exercise 3 tests
+//bmiCalculator tests
 
 xdescribe('calculate bmi', () => {
   it('should return an object with 3 properties', () => {
